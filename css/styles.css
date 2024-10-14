@@ -1,51 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
   font-family: "Bree Serif", sans-serif;
   list-style: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: lighter;
 }
 
-body{
-  height: 100vh;
+body {
+  height: 100dvh;
   background-color: #342E37;
   color: white;
 }
 
-#itemtrailer{
+p+p {
+  margin-top: 10px;
+}
+
+#itemtrailer {
   width: 50%;
   height: 50%;
   box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.2);
 }
 
-.home-text-left{
-  line-height: -1;
-}
-
-.top-section{
+.home-top-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+
 }
 
+.home-text-left {
+  font-size: 1.5rem;
+  padding-left: 2.5%;
+}
 
-a:hover{
+.home-text-right {
+  font-size: 1.5rem;
+  padding-left: 2.5%;
+}
+
+.home-mid-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #FF8484;
+  border-radius: 25px;
+  width: 25%;
+  height: 2.5dvw;
+  margin: auto;
+  margin-top: 5dvh;
+}
+
+.home-mid-under {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.25rem;
+  margin: auto;
+  margin-top: 3dvh;
+}
+
+.home-phone-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-phone-review{
+  width: 62dvh;
+}
+
+.home-phone-review p{
+  display: block;
+  max-width: fit-content;
+  font-size: 1rem;
+}
+
+.home-phone-review h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 12px;
+  font-size: 2rem;
+}
+
+#home-phone-image {
+  display: block;
+  width: 25vw;
+  max-width: 100%;
+  min-width: 25vw;
+  height: auto;
+  padding-top: 10px;
+}
+
+a:hover {
   transition: all 0.1s ease;
   color: #FF8484;
-  
+
 }
 
-header{
+header {
   position: relative;
   padding: 0 2rem;
 }
 
-.navbar{
+.navbar {
   width: 100%;
   height: 60px;
   max-width: 1200px;
@@ -54,29 +119,30 @@ header{
   align-items: center;
   justify-content: space-between;
 }
-.navbar .logo{
-  height: 8dvh;
-  width: 6dvh;
+
+.navbar .logo {
+  height: 7dvh;
+  width: 4dvh;
   cursor: pointer;
 }
 
-a{
+a {
   color: white;
 }
 
-.navbar .links{
+.navbar .links {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
 }
 
-.navbar .toggle-btn{
+.navbar .toggle-btn {
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
 }
 
-.login-btn{
+.login-btn {
   background-color: #FF8484;
   color: white;
   padding: 0.5rem 1rem;
@@ -88,19 +154,19 @@ a{
   cursor: pointer;
 }
 
-.login-btn:hover{
+.login-btn:hover {
   transition: all 0.1s ease;
   scale: 1.05;
   background-color: white;
 }
 
-.login-btn:active{
+.login-btn:active {
   scale: 0.95;
   background-color: #dd7272;
   color: white;
 }
 
-.navmenu{
+.navmenu {
   display: none;
   position: absolute;
   right: 2rem;
@@ -113,41 +179,43 @@ a{
   transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.navmenu.open{
+.navmenu.open {
   height: 240px;
 
 }
 
-.navmenu li{
+.navmenu li {
   padding: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.navmenu .login-btn{
+.navmenu .login-btn {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 @media(max-width: 992px) {
-  .navbar .links, .navbar .login-btn{
+
+  .navbar .links,
+  .navbar .login-btn {
     display: none;
   }
 
-  .navbar .toggle-btn{
+  .navbar .toggle-btn {
     transition: all 0.5s ease;
     display: block;
   }
 
-  .navmenu{
+  .navmenu {
     display: block;
   }
 }
 
 @media(max-width: 576px) {
-  .navmenu{
+  .navmenu {
     left: 2rem;
     width: unset;
   }
