@@ -109,7 +109,7 @@ p+p {
   padding: 10px;
 }
 
-.home-phone-info button {
+.learn-more {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,17 +126,21 @@ p+p {
   cursor: pointer;
 }
 
-.home-phone-info button:hover {
+.learn-more:hover {
   transition: all 0.1s ease;
   scale: 1.03;
   background-color: white;
   color: #FF8484;
 }
 
-.home-phone-info button:active {
+.learn-more:active {
   scale: 0.98;
   background-color: #dd7272;
   color: white;
+}
+
+.head-text{
+  padding-top: 50px;
 }
 
 .products-grid {
@@ -212,6 +216,121 @@ p+p {
   scale: 0.98;
   background-color: #dd7272;
   color: white;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.about-content {
+  width: 100%;
+}
+
+.text-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+  width: 18vw;
+}
+
+.image-content {
+  position: relative;
+  width: 100%;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 20px;
+  text-align:left;
+  right: 52%;
+  bottom: 20%;
+  padding: 20px;
+  width: 40vw;
+  max-width: 90%;
+}
+
+.image-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #2A252D;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-elements h2{
+  text-align: center;
+  position: relative;
+  width: 30vw; 
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+.top{
+  background-color: #FF8484;
+  padding: 8px;
+  border-radius: 25px;
+}
+
+.top:hover{
+  transition: all 0.1s ease;
+  background-color: white;
+  color: #FF8484;
+  cursor: pointer;
+  padding: 11px;
+}
+
+.top:active{
+  background-color: #dd7272;
+  color: white;
+  padding: 7px;
+}
+
+.footerlogo{
+  width: 3vw;
+  margin-top: 25px;
+}
+
+.footer-bot{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.footer-bot a{
+  padding-left: 110px;
+  color: #695C70;
+}
+
+.footer-contact{
+  color: #695C70;
+  text-align: left;
+}
+
+.footer-rights{
+  text-align: right;
+  color: #695C70;
+  padding-top: 30px;
 }
 
 a:hover {

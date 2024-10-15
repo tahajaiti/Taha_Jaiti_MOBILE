@@ -28,8 +28,8 @@
     <nav class="navmenu">
       <ul class="links">
         <li><a href="#">HOME</a></li>
-        <li><a href="#">PRODUCTS</a></li>
-        <li><a href="#">ABOUT</a></li>
+        <li><a href="#productspage">PRODUCTS</a></li>
+        <li><a href="#aboutpage">ABOUT</a></li>
         <li> <a href="#" class="login-btn" id="btn-login">LOGIN</a></li>
       </ul>
     </nav>
@@ -55,7 +55,7 @@
             <p>“The Galaxy S24 FE is a masterpiece in every way—sleek design, powerful performance, and a stunning
               camera.”</p>
             <p>“The camera on the S24 FE is out of this world! Every photo looks professional, even in low light.”</p>
-            <p>“A true gamer’s dream! The Galaxy S24 FE delivers hyper-realistic graphics and smooth gameplay.”</p>
+            <p>“A true gamer's dream! The Galaxy S24 FE delivers hyper-realistic graphics and smooth gameplay.”</p>
             <p>“Premium features at a fantastic price. The S24 FE delivers everything you need without breaking the
               bank.”</p>
           </div>
@@ -66,14 +66,14 @@
               <li>Stunning low-light portraits with Galaxy's ProVisual Engine</li>
               <li>Hyper-realistic gaming experience</li>
             </ul>
-            <button>LEARN MORE</button>
+            <button class="learn-more">LEARN MORE</button>
           </div>
         </div>
     </section>
 
-    <section class="products">
+    <section class="products" name="productspage">
       <header>
-        <h1>PRODUCTS</h1>
+        <h1 class="head-text">PRODUCTS</h1>
       </header>
       <div class="products-grid">
         <div class="product-card">
@@ -134,7 +134,56 @@
         </div>
       </div>
     </section>
+
+    <section class="about" name="aboutpage">
+      <header>
+        <h1>ABOUT US</h1>
+      </header>
+
+      <div class="about-content">
+        <div class="text-content">
+          <div class="left-box">
+            <h2>Taking the lead in brilliant tech innovation</h2>
+          </div>
+
+          <div class="right-box">
+            <h2>Brilliant innovation you never expected</h2>
+          </div>
+        </div>
+
+        <div class="image-content">
+          <img src="images/aboutimage.png" alt="image for about us">
+          <div class="image-text">
+            <h3>We are expanding our highly differentiated mobile devices, as well as working hard to develop
+              next-generation innovation.</h3>
+            <button class="learn-more">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="footer-elements">
+      <h1>SYSEER</h1>
+      <h2>Discover the latest smartphones with cutting-edge technology at competitive prices. We're dedicated to
+        providing quality devices and exceptional customer service to elevate your mobile experience.</h2>
+      <a href="#" class="top">TO THE TOP</a>
+    </div>
+    <img src="images/githublogo.png" alt="Github Logo" class="footerlogo">
+    <div class="footer-bot">
+      <div class="footer-contact">
+        <h4>Telephone: +1 646-291-2761</h4>
+        <h4>Client Support: contact@syserr.com</h4>
+        <h4>Adress: 12055 Summit Cir,Beverly Hills, CA 90210</h4>
+      </div>
+      <a href="https://github.com/tahajaiti" target="_blank">SYSERR © 2024</a>
+      <div class="footer-rights">
+          <h4>All rights reserved. Galaxy is a registered trademark of SYSERR Ltd.</4>
+      </div>
+    </div>
+
+  </footer>
 
   <script src="scripts/navmenu.js"></script>
 </body>
