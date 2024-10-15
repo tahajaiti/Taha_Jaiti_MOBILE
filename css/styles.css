@@ -17,6 +17,18 @@ body {
   color: white;
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
 p+p {
   margin-top: 10px;
 }
@@ -70,28 +82,112 @@ p+p {
   margin-top: 10px;
 }
 
-.home-phone-section{
+.home-phone-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  padding-left: 20px;
 }
 
-.home-phone-reviews p{
+.home-phone-reviews p {
   width: 27.5vw;
 }
 
-#home-phone-img{
+#home-phone-img {
   width: 20vw;
   margin: 10px auto;
 }
 
-.home-phone-reviews h1{
+.home-phone-info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.home-phone-info li {
+  list-style-type: disc;
+  padding: 10px;
+}
+
+.home-phone-info button {
   display: flex;
   justify-content: center;
-  font-size: 1.8vw;
-  position: relative;
-  bottom: 2vw;
+  align-items: center;
+  font-size: 1.5vw;
+  color: white;
+  background-color: #FF8484;
+  border-style: none;
+  border-radius: 25px;
+  width: 18vw;
+  height: 7vh;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+.home-phone-info button:hover {
+  transition: all 0.1s ease;
+  scale: 1.03;
+  background-color: white;
+  color: #FF8484;
+}
+
+.home-phone-info button:active {
+  scale: 0.98;
+  background-color: #dd7272;
+  color: white;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr); /* Two items per row */
+  gap: 100px; /* Adjusted gap between items */
+  padding: 20px; /* Added padding around the grid */
+}
+
+.product-card {
+  background-color: #5F5464;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  height: 100%; /* Makes sure the card adapts to its content */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures spacing for the button */
+}
+
+.product-card img {
+  scale: 0.5;
+  max-width: 100%;
+}
+
+.product-card h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  color: #d4d4d4;
+}
+
+.product-card button {
+  background-color: #FF8484;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: auto; /* Centers the button */
+  margin-top: 20px;
+}
+
+.product-card button:hover {
+  background-color: #ffffff;
+  color: #FF8484;
 }
 
 a:hover {
