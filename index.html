@@ -12,46 +12,37 @@
 </head>
 
 <body>
-  <header class="navheader">
-    <nav class="navbar">
-      <img class="logo" src="images/logo.png" alt="SYSERR Logo">
-      <ul class="links">
+  <header class="nav-header">
+    <nav class="nav-section">
+      <p class="logo">SYSERR</p>
+
+      <ul class="navbar">
         <li><a href="#">HOME</a></li>
-        <li><a href="#productspage">PRODUCTS</a></li>
-        <li><a href="#aboutpage">ABOUT</a></li>
+        <li><a href="#">PRODUCTS</a></li>
+        <li><a href="#">ABOUT</a></li>
       </ul>
-      <a href="login.html" class="login-btn" id="btn-login">LOGIN</a>
-      <div class="toggle-btn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </nav>
-    <nav class="navmenu">
-      <ul class="links">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#productspage">PRODUCTS</a></li>
-        <li><a href="#aboutpage">ABOUT</a></li>
-        <li> <a href="#" class="login-btn" id="btn-login">LOGIN</a></li>
-      </ul>
+
+      <a href="login.html" class="login-btn">LOG IN</a>
     </nav>
   </header>
 
   <main>
     <section class="homepage">
       <div class="home-top-section">
-        <h1 class="home-text">The new <span>Galaxy S24 FE</span> can make any big day worth it.</h1>
+        <h2 class="home-text">The new <span>Galaxy S24 FE</span> can make any big day worth it.</h2>
         <video src="video/trailer.mp4" loop autoplay controls id="itemtrailer"></video>
-        <h1 class="home-text">Now packed with every feature you love from <span>Galaxy AI</span></h1>
+        <h2 class="home-text">Now packed with every feature you love from <span>Galaxy AI</span></h2>
       </div>
 
       <div class="home-mid-section">
         <div>
-          <h1 class="home-mid-text">LATEST COLLECTION</h1>
-          <h2 class="home-mid-under">Galaxy S24 FE</h2>
+          <h2 class="home-mid-text">LATEST COLLECTION</h2>
+          <h3 class="home-mid-under">Galaxy S24 FE</h3>
         </div>
 
         <div class="home-phone-section">
           <div class="home-phone-reviews">
-            <h1>REVIEWS</h1>
+            <h2>REVIEWS</h2>
             <p>“The Galaxy S24 FE is a masterpiece in every way—sleek design, powerful performance, and a stunning
               camera.”</p>
             <p>“The camera on the S24 FE is out of this world! Every photo looks professional, even in low light.”</p>
@@ -69,15 +60,16 @@
             <button class="learn-more">LEARN MORE</button>
           </div>
         </div>
+      </div>
     </section>
 
     <section class="products" id="productspage">
       <header>
-        <h1 class="head-text">PRODUCTS</h1>
+        <h2 class="head-text">PRODUCTS</h2>
       </header>
       <div class="products-grid">
         <div class="product-card">
-          <h2>Galaxy S24 FE</h2>
+          <h3>Galaxy S24 FE</h3>
           <div class="product-card-main">
             <img src="images/phone1.png" alt="Galaxy S24 FE">
             <div class="product-card-info">
@@ -92,7 +84,7 @@
 
 
         <div class="product-card">
-          <h2>Galaxy Z Fold6</h2>
+          <h3>Galaxy Z Fold6</h3>
           <div class="product-card-main">
             <img src="images/phone4.png" alt="Galaxy Z Fold6">
             <div class="product-card-info">
@@ -106,7 +98,7 @@
         </div>
 
         <div class="product-card">
-          <h2>Galaxy Z Flip6</h2>
+          <h3>Galaxy Z Flip6</h3>
           <div class="product-card-main">
             <img src="images/phone3.png" alt="Galaxy Z Flip6">
             <div class="product-card-info">
@@ -120,7 +112,7 @@
         </div>
 
         <div class="product-card">
-          <h2>Galaxy A35 5G</h2>
+          <h3>Galaxy A35 5G</h3>
           <div class="product-card-main">
             <img src="images/phone2.png" alt="Galaxy A35 5G">
             <div class="product-card-info">
@@ -137,25 +129,25 @@
 
     <section class="about" id="aboutpage">
       <header>
-        <h1 class="head-text">ABOUT US</h1>
+        <h2 class="head-text">ABOUT US</h2>
       </header>
 
       <div class="about-content">
         <div class="text-content">
           <div class="left-box">
-            <h2>Taking the lead in brilliant tech innovation</h2>
+            <h3>Taking the lead in <span>Brilliant innovation</span></h3>
           </div>
 
           <div class="right-box">
-            <h2>Brilliant innovation you never expected</h2>
+            <h3><span>Brilliant innovation</span> you never expected</h3>
           </div>
         </div>
 
         <div class="image-content">
           <img src="images/aboutimage.png" alt="image for about us">
           <div class="image-text">
-            <h3>We are expanding our highly differentiated mobile devices, as well as working hard to develop
-              next-generation innovation.</h3>
+            <h4>We are expanding our highly differentiated mobile devices, as well as working hard to develop
+              next-generation innovation.</h4>
             <button class="learn-more">LEARN MORE</button>
           </div>
         </div>
@@ -164,22 +156,22 @@
   </main>
 
   <footer>
-    <div class="footer-elements">
-      <h1>SYSEER</h1>
-      <h2>Discover the latest smartphones with cutting-edge technology at competitive prices. We're dedicated to
-        providing quality devices and exceptional customer service to elevate your mobile experience.</h2>
+    <div class="main-footer">
+      <h2>SYSEER</h2>
+      <h3>Discover the latest smartphones with cutting-edge technology at competitive prices. We're dedicated to
+        providing quality devices and exceptional customer service to elevate your mobile experience.</h3>
       <a href="#" class="top">TO THE TOP</a>
+      <img src="images/githublogo.png" alt="Github Logo" class="footerlogo">
+      <a href="https://github.com/tahajaiti" target="_blank" class="tag-rights">SYSERR © 2024</a>
     </div>
-    <img src="images/githublogo.png" alt="Github Logo" class="footerlogo">
     <div class="footer-bot">
       <div class="footer-contact">
         <h4>Telephone: +1 646-291-2761</h4>
         <h4>Client Support: contact@syserr.com</h4>
         <h4>Adress: 12055 Summit Cir,Beverly Hills, CA 90210</h4>
       </div>
-      <a href="https://github.com/tahajaiti" target="_blank">SYSERR © 2024</a>
       <div class="footer-rights">
-          <h4>All rights reserved. Galaxy is a registered trademark of SYSERR Ltd.</4>
+        <h4>All rights reserved. Galaxy is a registered trademark of SYSERR Ltd.</h4>
       </div>
     </div>
 

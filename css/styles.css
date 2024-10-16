@@ -1,62 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Bree Serif", sans-serif;
   list-style: none;
-  font-size: 1rem;
   font-weight: lighter;
 }
 
 body {
-  height: 100vh;
   background-color: #342E37;
   color: white;
+  min-height: 100vh;
+}
+
+.nav-section {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2A252D;
+  height: 10vh;
+  transition: all 0.50s ease;
+}
+
+.navbar {
+  display: flex;
+  padding-left: 25px;
+}
+
+.navbar a {
+  padding: 5px 0;
+  margin: 0 50px;
+}
+
+.logo{
+  color: #5F5464;
+}
+
+.login-btn{
+  background-color: #FF8484;
+  padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: #FF8484;
+  transform: scale(1.05);
+}
+
+.login-btn:active {
+  background-color: #dd7272;
+  color: white;
+  transform: scale(0.95);
+}
+
+@media (max-width: 1024px){
+  .nav-section{
+    height: 5vh;
+    transition: 0.2s;
+  }
+
+  .login-btn {
+    padding: 0.4em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+}
+
+@media (max-width: 664px){
+  .nav-section{
+    height: 5vh;
+    transition: 0.2s;
+  }
+
+  .login-btn {
+    margin-right: 25px;
+    margin-left: 10px;
+    padding: 0.4em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    font-size: 0.71rem;
+    transition: all 0.2s ease;
+  }
 }
 
 main {
   max-width: 100%;
   margin: 0 auto;
-  padding: 3em;
+  margin-top: 100px;
 }
 
-h1 {
+h2 {
   text-align: center;
   font-size: 2rem;
 }
 
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+a {
+  transition: all 0.1s ease;
+  color: white;
+}
+
+a:hover {
+  color: #FF8484;
+}
+
+/* navigation bar */
+
+
+
 /* home section */
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+}
 
 #itemtrailer {
   width: 50%;
   height: 50%;
   max-width: 500ch;
-  box-shadow: 1px 8px 43px 7px rgba(0,0,0,0.72);
+  box-shadow: 1px 8px 43px 7px rgba(0, 0, 0, 0.72);
 }
 
 .home-top-section {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: row;
 }
 
 .home-text {
-  font-size: 2rem;
-  letter-spacing: 0.25em;
+  font-size: 200%;
+  letter-spacing: 0.2em;
   line-height: 1.2em;
-  max-width: 100ch;
-  
+  max-width: 150ch;
+  margin-left: 2em;
+  padding: auto;
 }
 
 .home-text span {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #ffffff;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .home-text span:hover {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #FF8484;
 }
 
@@ -70,17 +178,18 @@ h1 {
   width: 50%;
   height: 7vh;
   margin: auto;
-  margin-top: 2ch;
-  box-shadow: 14px 14px 44px -12px rgba(0,0,0,0.72);
+  margin-top: 4ch;
+  box-shadow: 14px 14px 44px -12px rgba(0, 0, 0, 0.72);
 }
 
 .home-mid-under {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 2rem;
   margin: auto;
-  margin-top: 2ch;
+  margin-top: 1ch;
+  margin-bottom: 1ch;
 }
 
 .home-phone-section {
@@ -121,7 +230,7 @@ h1 {
   border-style: none;
   border-radius: 25px;
   cursor: pointer;
-  box-shadow: 14px 14px 44px -12px rgba(0,0,0,0.72);
+  box-shadow: 14px 14px 44px -12px rgba(0, 0, 0, 0.72);
   transition: all 0.1s ease-in-out;
 }
 
@@ -153,7 +262,7 @@ h1 {
   background-color: #5F5464;
   border-radius: 10px;
   height: 80vh;
-  box-shadow: 1px 8px 43px 3px rgba(0,0,0,0.32);
+  box-shadow: 1px 8px 43px 3px rgba(0, 0, 0, 0.32);
 }
 
 .product-card h2 {
@@ -188,7 +297,7 @@ h1 {
   border: none;
   border-radius: 25px;
   padding: 0.7em 5em;
-  box-shadow: 14px 14px 44px -12px rgba(0,0,0,0.72);
+  box-shadow: 14px 14px 44px -12px rgba(0, 0, 0, 0.72);
   transition: all 0.1s ease;
 }
 
@@ -204,29 +313,35 @@ h1 {
   color: white;
 }
 
+/* about us page */
+
 .about-us {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40ch 0;
-}
-
-.about-content {
-  width: 100%;
 }
 
 .text-content {
   display: flex;
-  justify-content: space-between;
-  padding: 0 40px;
-  max-width: 1200px;
-  margin: 0 auto;
+  justify-content: space-around;
+  align-content: flex-end;
 }
 
-.text-content h2 {
+.text-content span {
+  font-size: 2.5rem;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.text-content span:hover {
+  font-size: 3rem;
+  color: #FF8484;
+}
+
+.text-content h3 {
   text-align: center;
   font-size: 2rem;
-  padding: 20px;
+  padding: 0.5em;
   width: 18vw;
 }
 
@@ -236,76 +351,88 @@ h1 {
 }
 
 .image-content img {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: auto;
-  display: block;
   border-radius: 20px;
 }
 
 .image-text {
   position: absolute;
-  bottom: 20px;
   text-align: left;
-  right: 52%;
+  right: 55%;
   bottom: 20%;
-  padding: 20px;
+  padding: 2em;
   width: 40vw;
-  max-width: 90%;
+  max-width: 100%;
 }
 
-.image-text h3 {
+.image-text h4 {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
 footer {
   background-color: #2A252D;
-  padding: 40px;
+  margin-top: 10px;
+  padding: 1em;
   text-align: center;
+  border-radius: 20px;
 }
 
-.footer-elements h2 {
-  text-align: center;
-  position: relative;
-  width: 30vw;
+.main-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer h3 {
+  font-size: 0.75rem;
+  max-width: 60ch;
+  line-height: 20px;
   margin: auto;
-  padding-bottom: 25px;
 }
 
 .top {
   background-color: #FF8484;
-  padding: 8px;
+  padding: 0.4em;
+  max-width: 30ch;
+  margin: auto;
+  margin-top: 10px;
   border-radius: 25px;
+  transition: all 0.1s ease;
 }
 
 .top:hover {
-  transition: all 0.1s ease;
   background-color: white;
   color: #FF8484;
   cursor: pointer;
-  padding: 11px;
+  padding: 0.6em;
 }
 
 .top:active {
   background-color: #dd7272;
   color: white;
-  padding: 7px;
+  padding: 0.5em;
 }
 
 .footerlogo {
   width: 3vw;
-  margin-top: 25px;
+  padding-top: 1em;
+  margin: auto;
+}
+
+.tag-rights {
+  display: flex;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: #695C70;
 }
 
 .footer-bot {
   display: flex;
   justify-content: space-between;
   align-content: center;
-}
-
-.footer-bot a {
-  padding-left: 110px;
-  color: #695C70;
 }
 
 .footer-contact {
@@ -316,116 +443,7 @@ footer {
 .footer-rights {
   text-align: right;
   color: #695C70;
-  padding-top: 30px;
-}
-
-a:hover {
-  transition: all 0.1s ease;
-  color: #FF8484;
-
-}
-
-.navheader {
-  padding: 0 2rem;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 60px;
-  max-width: 1280px;
-  margin: 0 auto;
-  background-color: #2A252D;
-}
-
-.navbar {
-  width: 100%;
-  height: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar .logo {
-  height: 7vh;
-  width: 2vw;
-  cursor: pointer;
-}
-
-a {
-  color: white;
-}
-
-.navbar .links {
-  display: flex;
-  gap: 10vh;
-  padding-left: 20px;
-}
-
-.navbar .toggle-btn {
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-}
-
-.login-btn {
-  background-color: #FF8484;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  outline: none;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.login-btn:hover {
-  transition: all 0.1s ease;
-  scale: 1.05;
-  background-color: white;
-}
-
-.login-btn:active {
-  scale: 0.95;
-  background-color: #dd7272;
-  color: white;
-}
-
-.navmenu {
-  display: none;
-  position: absolute;
-  right: 2rem;
-  top: 60px;
-  height: 0;
-  width: 200px;
-  background: #2A252D;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  z-index: 1;
-}
-
-.navmenu.open {
-  height: 170px;
-
-}
-
-.navmenu li {
-  padding: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navmenu .login-btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  padding-top: 5em;
 }
 
 .loginpage {
@@ -482,28 +500,4 @@ a {
   scale: 0.95;
   background-color: #dd7272;
   color: white;
-}
-
-@media(max-width: 992px) {
-
-  .navbar .links,
-  .navbar .login-btn {
-    display: none;
-  }
-
-  .navbar .toggle-btn {
-    transition: all 0.5s ease;
-    display: block;
-  }
-
-  .navmenu {
-    display: block;
-  }
-}
-
-@media(max-width: 576px) {
-  .navmenu {
-    left: 2rem;
-    width: unset;
-  }
 }
