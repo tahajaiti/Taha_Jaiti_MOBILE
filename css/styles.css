@@ -26,11 +26,13 @@ h1 {
   font-size: 2rem;
 }
 
+/* home section */
+
 #itemtrailer {
-  padding-top: 1em;
   width: 50%;
   height: 50%;
   max-width: 500ch;
+  box-shadow: 1px 8px 43px 7px rgba(0,0,0,0.72);
 }
 
 .home-top-section {
@@ -44,16 +46,18 @@ h1 {
   letter-spacing: 0.25em;
   line-height: 1.2em;
   max-width: 100ch;
+  
 }
 
-.home-text span{
+.home-text span {
   font-size: 4rem;
-  color: #FF8484;
+  color: #ffffff;
   transition: all 0.2s ease-in-out;
 }
 
-.home-text span:hover{
+.home-text span:hover {
   font-size: 5rem;
+  color: #FF8484;
 }
 
 .home-mid-text {
@@ -67,6 +71,7 @@ h1 {
   height: 7vh;
   margin: auto;
   margin-top: 2ch;
+  box-shadow: 14px 14px 44px -12px rgba(0,0,0,0.72);
 }
 
 .home-mid-under {
@@ -108,7 +113,7 @@ h1 {
 .learn-more {
   display: flex;
   font-size: 1rem;
-  padding: 0.75em;
+  padding: 0.75em 5em;
   margin: auto;
   margin-left: 6%;
   color: white;
@@ -116,6 +121,7 @@ h1 {
   border-style: none;
   border-radius: 25px;
   cursor: pointer;
+  box-shadow: 14px 14px 44px -12px rgba(0,0,0,0.72);
   transition: all 0.1s ease-in-out;
 }
 
@@ -131,50 +137,45 @@ h1 {
   color: white;
 }
 
-.head-text{
+/* products section */
+
+.head-text {
   padding-top: 4ch;
 }
 
 .products-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  padding: 20px;
+  gap: 50px;
 }
 
 .product-card {
   background-color: #5F5464;
   border-radius: 10px;
-  padding: 15px;
-  width: 500px;
-  max-width: 600px;
-  margin: auto;
+  height: 80vh;
+  box-shadow: 1px 8px 43px 3px rgba(0,0,0,0.32);
 }
 
-.product-card h2{
+.product-card h2 {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .product-card img {
-  max-width: 100%;
   height: auto;
-  width: 200px;
+  width: 20vw;
   margin: auto;
-  margin-bottom: 15px;
 }
 
 .product-card-main {
-  margin: 5px;
   color: #ffffff;
   display: flex;
-  justify-content: space-between;
-  align-self: center;
-  padding:auto;
+  justify-content: flex-start;
+  font-size: 1rem;
 }
 
-.product-card-info span{
+.product-card-info span {
   display: flex;
   flex-direction: column;
   color: #FF8484;
@@ -185,21 +186,14 @@ h1 {
   background-color: #FF8484;
   color: white;
   border: none;
-  height: 6vh;
-  width: 15vw;
-  padding: 8px 16px;
   border-radius: 25px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 20px;
+  padding: 0.7em 5em;
+  box-shadow: 14px 14px 44px -12px rgba(0,0,0,0.72);
+  transition: all 0.1s ease;
 }
 
 .product-card button:hover {
-  transition: all 0.1s ease;
-  scale: 1.03;
+  transform: scale(1.03);
   background-color: white;
   color: #FF8484;
 }
@@ -214,7 +208,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0;
+  padding: 40ch 0;
 }
 
 .about-content {
@@ -251,7 +245,7 @@ h1 {
 .image-text {
   position: absolute;
   bottom: 20px;
-  text-align:left;
+  text-align: left;
   right: 52%;
   bottom: 20%;
   padding: 20px;
@@ -270,21 +264,21 @@ footer {
   text-align: center;
 }
 
-.footer-elements h2{
+.footer-elements h2 {
   text-align: center;
   position: relative;
-  width: 30vw; 
+  width: 30vw;
   margin: auto;
   padding-bottom: 25px;
 }
 
-.top{
+.top {
   background-color: #FF8484;
   padding: 8px;
   border-radius: 25px;
 }
 
-.top:hover{
+.top:hover {
   transition: all 0.1s ease;
   background-color: white;
   color: #FF8484;
@@ -292,34 +286,34 @@ footer {
   padding: 11px;
 }
 
-.top:active{
+.top:active {
   background-color: #dd7272;
   color: white;
   padding: 7px;
 }
 
-.footerlogo{
+.footerlogo {
   width: 3vw;
   margin-top: 25px;
 }
 
-.footer-bot{
+.footer-bot {
   display: flex;
   justify-content: space-between;
   align-content: center;
 }
 
-.footer-bot a{
+.footer-bot a {
   padding-left: 110px;
   color: #695C70;
 }
 
-.footer-contact{
+.footer-contact {
   color: #695C70;
   text-align: left;
 }
 
-.footer-rights{
+.footer-rights {
   text-align: right;
   color: #695C70;
   padding-top: 30px;
@@ -434,7 +428,7 @@ a {
   justify-content: center;
 }
 
-.loginpage{
+.loginpage {
   height: 70vh;
   padding-top: 70px;
   display: flex;
@@ -443,14 +437,14 @@ a {
   align-items: center;
 }
 
-.login-text{
+.login-text {
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 1.3rem;
 }
 
-.login-input{
+.login-input {
   background-color: #2A252D;
   color: white;
   border-color: #FF8484;
@@ -462,11 +456,11 @@ a {
   padding: 10px;
 }
 
-.login-submit{
+.login-submit {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:30px auto;
+  margin: 30px auto;
   width: 180px;
   padding: 10px;
   border-radius: 20px;
@@ -477,14 +471,14 @@ a {
   cursor: pointer;
 }
 
-.login-submit:hover{
+.login-submit:hover {
   transition: all 0.1s ease;
   scale: 1.05;
   background-color: white;
   color: #FF8484;
 }
 
-.login-submit:active{
+.login-submit:active {
   scale: 0.95;
   background-color: #dd7272;
   color: white;
@@ -504,10 +498,6 @@ a {
 
   .navmenu {
     display: block;
-  }
-
-  .homepage{
-
   }
 }
 
