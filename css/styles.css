@@ -14,89 +14,7 @@ body {
   background-color: #342E37;
   color: white;
   min-height: 100vh;
-}
-
-.nav-section {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #2A252D;
-  height: 10vh;
-  transition: all 0.50s ease;
-}
-
-.navbar {
-  display: flex;
-  padding-left: 25px;
-}
-
-.navbar a {
-  padding: 5px 0;
-  margin: 0 50px;
-}
-
-.logo{
-  color: #5F5464;
-}
-
-.login-btn{
-  background-color: #FF8484;
-  padding: 1em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  border-radius: 20px;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-}
-
-.login-btn:hover {
-  background-color: white;
-  color: #FF8484;
-  transform: scale(1.05);
-}
-
-.login-btn:active {
-  background-color: #dd7272;
-  color: white;
-  transform: scale(0.95);
-}
-
-@media (max-width: 1024px){
-  .nav-section{
-    height: 5vh;
-    transition: 0.2s;
-  }
-
-  .login-btn {
-    padding: 0.4em;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
-  }
-}
-
-@media (max-width: 664px){
-  .nav-section{
-    height: 5vh;
-    transition: 0.2s;
-  }
-
-  .login-btn {
-    margin-right: 25px;
-    margin-left: 10px;
-    padding: 0.4em;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
-    font-size: 0.71rem;
-    transition: all 0.2s ease;
-  }
+  padding: 10px;
 }
 
 main {
@@ -126,7 +44,56 @@ a:hover {
 
 /* navigation bar */
 
+.nav-section {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2A252D;
+  height: 10vh;
+  transition: all 0.50s ease;
+}
 
+.navbar {
+  display: flex;
+  padding-left: 25px;
+}
+
+.navbar a {
+  padding: 5px 0;
+  margin: 0 50px;
+}
+
+.logo {
+  color: #5F5464;
+}
+
+.login-btn {
+  background-color: #FF8484;
+  padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: #FF8484;
+  transform: scale(1.05);
+}
+
+.login-btn:active {
+  background-color: #dd7272;
+  color: white;
+  transform: scale(0.95);
+}
 
 /* home section */
 
@@ -153,8 +120,8 @@ a:hover {
   letter-spacing: 0.2em;
   line-height: 1.2em;
   max-width: 150ch;
-  margin-left: 2em;
   padding: auto;
+  padding-left: 1em;
 }
 
 .home-text span {
@@ -176,7 +143,7 @@ a:hover {
   background-color: #FF8484;
   border-radius: 25px;
   width: 50%;
-  height: 7vh;
+  height: 8vh;
   margin: auto;
   margin-top: 4ch;
   box-shadow: 14px 14px 44px -12px rgba(0, 0, 0, 0.72);
@@ -206,6 +173,7 @@ a:hover {
   width: 20vw;
   max-width: 200ch;
   margin: auto;
+  padding-right: 45px;
 }
 
 .home-phone-info {
@@ -249,7 +217,8 @@ a:hover {
 /* products section */
 
 .head-text {
-  padding-top: 4ch;
+  padding-top: 2ch;
+  padding-bottom: 2ch;
 }
 
 .products-grid {
@@ -261,7 +230,7 @@ a:hover {
 .product-card {
   background-color: #5F5464;
   border-radius: 10px;
-  height: 80vh;
+  height: 110%;
   box-shadow: 1px 8px 43px 3px rgba(0, 0, 0, 0.32);
 }
 
@@ -297,6 +266,7 @@ a:hover {
   border: none;
   border-radius: 25px;
   padding: 0.7em 5em;
+  margin-top: 50px;
   box-shadow: 14px 14px 44px -12px rgba(0, 0, 0, 0.72);
   transition: all 0.1s ease;
 }
@@ -319,6 +289,10 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.head-text{
+  padding-top: 2em;
 }
 
 .text-content {
@@ -346,23 +320,17 @@ a:hover {
 }
 
 .image-content {
-  position: relative;
-  width: 100%;
-}
-
-.image-content img {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
-  height: auto;
+  height: 100%;
+  background-image: url("/HTMLandCSS/Brief2/images/aboutimage.png");
+  background-size: cover;
+  background-position: center;
   border-radius: 20px;
 }
 
 .image-text {
-  position: absolute;
-  text-align: left;
-  right: 55%;
-  bottom: 20%;
   padding: 2em;
   width: 40vw;
   max-width: 100%;
@@ -433,6 +401,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  padding-top: 5em;
 }
 
 .footer-contact {
@@ -443,12 +412,11 @@ footer {
 .footer-rights {
   text-align: right;
   color: #695C70;
-  padding-top: 5em;
+  padding-top: 2.5em;
 }
 
 .loginpage {
   height: 70vh;
-  padding-top: 70px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -457,7 +425,7 @@ footer {
 
 .login-text {
   display: flex;
-  padding-top: 10px;
+  padding-top: 1em;
   padding-bottom: 10px;
   font-size: 1.3rem;
 }
@@ -500,4 +468,204 @@ footer {
   scale: 0.95;
   background-color: #dd7272;
   color: white;
+}
+
+/* media query responsiveness */
+
+@media (max-width: 991px) {
+
+  /* nav responsive */
+
+  .nav-section {
+    height: 8vh;
+    transition: 0.2s;
+  }
+
+  .navbar {
+    font-size: 1rem;
+  }
+
+  .navbar a {
+    padding: 5px 0;
+    margin: 0 35px;
+  }
+
+  .login-btn {
+    padding: 0.4em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+
+  /* home section responsive */
+
+  .home-text {
+    font-size: 100%;
+    letter-spacing: 0.1em;
+    line-height: 0.6em;
+    max-width: 150ch;
+    margin-left: 2em;
+    padding: auto;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    transition: 0.2s;
+  }
+
+  .home-text span {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .home-top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.2s;
+  }
+
+  .home-mid-text {
+    font-size: 1.5rem;
+    height: 8vh;
+    margin-top: auto;
+    transition: 0.2s;
+  }
+
+  .home-mid-under {
+    font-size: 1.5rem;
+    transition: 0.2s;
+  }
+
+  .home-phone-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    transition: 0.2s;
+  }
+
+  .home-phone-reviews h2 {
+    font-size: 1rem;
+    padding-bottom: 10px;
+    transition: 0.2s;
+  }
+
+  .home-phone-reviews p {
+    max-width: 60ch;
+    margin: auto;
+    text-align: center;
+    font-size: 0.75rem;
+    transition: 0.2s;
+  }
+
+  #home-phone-img {
+    width: 40vw;
+    max-width: 400ch;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 45px;
+    transition: 0.2s;
+  }
+
+  .home-phone-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    font-size: 0.75rem;
+    transition: 0.2s;
+  }
+
+  .home-phone-info li {
+    list-style-type: none;
+    padding: 7.5px;
+    transition: 0.2s;
+  }
+
+  .learn-more {
+    font-size: 0.75rem;
+    margin: auto;
+    transition: 0.2s;
+  }
+
+  /* products responsive */
+
+  .head-text {
+    padding-top: 1ch;
+    padding-bottom: 1ch;
+    transition: 0.2s;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    transition: .2s;
+  }
+  
+  .product-card {
+    width: 60vw;
+    margin: auto;
+    transition: .2s;
+  }
+
+  /* about responsive */
+
+  .head-text{
+    padding-top: 4ch;
+    transition: .2s;
+  }
+
+  .left-box h3{
+    font-size: 1.5rem;
+    transition: .2s;
+  }
+
+  .left-box span{
+    font-size: 2rem;
+    transition: .2s;
+  }
+
+  .right-box h3{
+    font-size: 1.5rem;
+    transition: .2s;
+  }
+
+  .right-box span{
+    font-size: 2rem;
+    transition: .2s;
+  }
+
+  .image-text{
+    
+  }
+
+}
+
+@media (max-width: 479px) {
+  .nav-section {
+    height: 5vh;
+    transition: 0.2s;
+  }
+
+  .navbar {
+    font-size: 1rem;
+  }
+
+  .navbar a {
+    padding: 5px 0;
+    margin: 0 20px;
+  }
+
+
+  .login-btn {
+    margin-right: 25px;
+    margin-left: 10px;
+    padding: 0.4em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
 }
