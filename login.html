@@ -2,16 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>SYSERR Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>SYSERR Login</title>
 </head>
 
-<header class="nav-header">
+<body>
+  <header class="nav-header">
     <nav class="nav-section">
       <p class="logo">SYSERR</p>
 
@@ -25,41 +23,38 @@
     </nav>
   </header>
 
-<body>
-    <main>
-        <section class="loginpage">
-        <form action="action.php">
-            <label for="email" class="login-text">EMAIL</label>
-            <input type="text" class="login-input" placeholder="Enter your email" name="email" required>
-            <label for="password" class="login-text">PASSWORD</label>
-            <input type="password" class="login-input" placeholder="Enter your password" name="password" required>
-            <button type="submit" class="login-submit">LOG IN</button>
-        </form>
-        </section>
-    </main>
+  <main>
+    <div class="loginpage">
+      <form action="action.php">
+        <label for="email" class="login-text">EMAIL</label>
+        <input type="text" class="login-input" placeholder="Enter your email" name="email" id="email" required>
+        <label for="password" class="login-text">PASSWORD</label>
+        <input type="password" class="login-input" placeholder="Enter your password" name="password" id="password" required>
+        <button type="submit" class="login-submit">LOG IN</button>
+      </form>
+    </div>
+  </main>
 
-    <footer>
-        <div class="main-footer">
-          <h2>SYSEER</h2>
-          <h3>Discover the latest smartphones with cutting-edge technology at competitive prices. We're dedicated to
-            providing quality devices and exceptional customer service to elevate your mobile experience.</h3>
-          <a href="index.html" class="top">HOME</a>
-          <img src="images/githublogo.png" alt="Github Logo" class="footerlogo">
-          <a href="https://github.com/tahajaiti" target="_blank" class="tag-rights">SYSERR © 2024</a>
-        </div>
-        <div class="footer-bot">
-          <div class="footer-contact">
-            <h4>Telephone: +1 646-291-2761</h4>
-            <h4>Client Support: contact@syserr.com</h4>
-            <h4>Adress: 12055 Summit Cir,Beverly Hills, CA 90210</h4>
-          </div>
-          <div class="footer-rights">
-            <h4>All rights reserved. Galaxy is a registered trademark of SYSERR Ltd.</h4>
-          </div>
-        </div>
-      </footer>
-    
-      <script src="scripts/navmenu.js"></script>
+  <footer>
+    <div class="main-footer">
+      <h2>SYSEER</h2>
+      <h3>Discover the latest smartphones with cutting-edge technology at competitive prices. We're dedicated to
+        providing quality devices and exceptional customer service to elevate your mobile experience.</h3>
+      <a href="index.html" class="top">HOME</a>
+      <img src="assets/images/githublogo.png" alt="Github Logo" class="footerlogo">
+      <a href="https://github.com/tahajaiti" target="_blank" class="tag-rights">SYSERR © 2024</a>
+    </div>
+    <div class="footer-bot">
+      <div class="footer-contact">
+        <h4>Telephone: +1 646-291-2761</h4>
+        <h4>Client Support: contact@syserr.com</h4>
+        <h4>Adress: 12055 Summit Cir,Beverly Hills, CA 90210</h4>
+      </div>
+      <div class="footer-rights">
+        <h4>All rights reserved. Galaxy is a registered trademark of SYSERR Ltd.</h4>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
