@@ -1,7 +1,7 @@
 # Site web d'une marque de telephone
 
 + Hosted Website :
-  -https://youcode-classe-e-2024-2025.github.io/Taha_Jaiti_MOBILE/
+  https://youcode-classe-e-2024-2025.github.io/Taha_Jaiti_MOBILE/
 
 # Deisgn:
 ![Home](https://i.imgur.com/FwZNHA1.png)
