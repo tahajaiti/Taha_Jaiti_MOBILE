@@ -19,7 +19,6 @@ body {
 
 main {
   max-width: 100%;
-  margin: 0 auto;
   margin-top: 100px;
 }
 
@@ -34,12 +33,18 @@ h3 {
 }
 
 a {
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
   color: white;
 }
 
 a:hover {
   color: #FF8484;
+  letter-spacing: 5px;
+}
+
+a:active {
+  font-size: 90%;
+  color: #dd7272;
 }
 
 /* navigation bar */
@@ -54,6 +59,8 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   background-color: #2A252D;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   height: 10vh;
   transition: all 0.50s ease;
 }
@@ -119,9 +126,6 @@ a:hover {
   font-size: 200%;
   letter-spacing: 0.2em;
   line-height: 1.2em;
-  max-width: 150ch;
-  padding: auto;
-  padding-left: 1em;
 }
 
 .home-text span {
@@ -139,7 +143,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 3rem;
   background-color: #FF8484;
   border-radius: 25px;
   width: 50%;
@@ -170,7 +174,7 @@ a:hover {
 }
 
 #home-phone-img {
-  width: 20vw;
+  width: 25%;
   max-width: 200ch;
   margin: auto;
   padding-right: 45px;
@@ -189,7 +193,7 @@ a:hover {
 
 .learn-more {
   display: flex;
-  font-size: 1rem;
+  font-size: 100%;
   padding: 0.75em 5em;
   margin: auto;
   margin-left: 6%;
@@ -224,13 +228,13 @@ a:hover {
 .products-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  gap: 100px;
 }
 
 .product-card {
   background-color: #5F5464;
   border-radius: 10px;
-  height: 110%;
+  height: 100%;
   box-shadow: 1px 8px 43px 3px rgba(0, 0, 0, 0.32);
 }
 
@@ -241,8 +245,7 @@ a:hover {
 }
 
 .product-card img {
-  height: auto;
-  width: 20vw;
+  width: 50%;
   margin: auto;
 }
 
@@ -257,7 +260,11 @@ a:hover {
   display: flex;
   flex-direction: column;
   color: #FF8484;
-  font-size: 1.3rem;
+  font-size: 150%;
+}
+
+.product-card-info p {
+  font-size: 100%;
 }
 
 .product-card button {
@@ -267,6 +274,7 @@ a:hover {
   border-radius: 25px;
   padding: 0.7em 5em;
   margin-top: 50px;
+  margin-bottom: 10px;
   box-shadow: 14px 14px 44px -12px rgba(0, 0, 0, 0.72);
   transition: all 0.1s ease;
 }
@@ -291,7 +299,7 @@ a:hover {
   align-items: center;
 }
 
-.head-text{
+.head-text {
   padding-top: 2em;
 }
 
@@ -302,7 +310,7 @@ a:hover {
 }
 
 .text-content span {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #ffffff;
   transition: all 0.2s ease-in-out;
 }
@@ -341,6 +349,8 @@ a:hover {
   margin-bottom: 20px;
 }
 
+/* footer section */
+
 footer {
   background-color: #2A252D;
   margin-top: 10px;
@@ -368,7 +378,7 @@ footer {
   margin: auto;
   margin-top: 10px;
   border-radius: 25px;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
 }
 
 .top:hover {
@@ -415,6 +425,8 @@ footer {
   padding-top: 2.5em;
 }
 
+/* login page */
+
 .loginpage {
   height: 70vh;
   display: flex;
@@ -440,6 +452,7 @@ footer {
   height: 7vh;
   width: 60vh;
   padding: 10px;
+  transition: all 0.5s ease;
 }
 
 .login-submit {
@@ -455,10 +468,10 @@ footer {
   color: white;
   font-size: 1rem;
   cursor: pointer;
+  transition: all 0.1s ease;
 }
 
 .login-submit:hover {
-  transition: all 0.1s ease;
   scale: 1.05;
   background-color: white;
   color: #FF8484;
@@ -470,9 +483,17 @@ footer {
   color: white;
 }
 
+.login-input:focus {
+  background-color: #221e24;
+}
+
 /* media query responsiveness */
 
 @media (max-width: 991px) {
+
+  main {
+    margin-top: 50px;
+  }
 
   /* nav responsive */
 
@@ -483,6 +504,7 @@ footer {
 
   .navbar {
     font-size: 1rem;
+    padding-left: 13px;
   }
 
   .navbar a {
@@ -499,6 +521,10 @@ footer {
   }
 
   /* home section responsive */
+
+  #itemtrailer {
+    width: 80%;
+  }
 
   .home-text {
     font-size: 100%;
@@ -518,6 +544,12 @@ footer {
     transition: all 0.25s ease-in-out;
   }
 
+  .home-text span:hover {
+    font-size: 2rem;
+    color: #FF8484;
+    transition: all 0.25s ease-in-out;
+  }
+
   .home-top-section {
     display: flex;
     flex-direction: column;
@@ -527,7 +559,7 @@ footer {
 
   .home-mid-text {
     font-size: 1.5rem;
-    height: 8vh;
+    height: 10%;
     margin-top: auto;
     transition: 0.2s;
   }
@@ -546,7 +578,7 @@ footer {
   }
 
   .home-phone-reviews h2 {
-    font-size: 1rem;
+    font-size: 2rem;
     padding-bottom: 10px;
     transition: 0.2s;
   }
@@ -555,12 +587,12 @@ footer {
     max-width: 60ch;
     margin: auto;
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 100%;
     transition: 0.2s;
   }
 
   #home-phone-img {
-    width: 40vw;
+    width: 60%;
     max-width: 400ch;
     margin: auto;
     padding-top: 10px;
@@ -574,7 +606,7 @@ footer {
     flex-direction: column;
     margin: auto;
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 100%;
     transition: 0.2s;
   }
 
@@ -585,87 +617,258 @@ footer {
   }
 
   .learn-more {
-    font-size: 0.75rem;
+    font-size: 100%;
     margin: auto;
     transition: 0.2s;
   }
 
   /* products responsive */
 
-  .head-text {
-    padding-top: 1ch;
-    padding-bottom: 1ch;
-    transition: 0.2s;
-  }
-  
   .products-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     transition: .2s;
   }
-  
+
   .product-card {
-    width: 60vw;
+    width: 80%;
+    height: 105%;
     margin: auto;
+    transition: .2s;
+  }
+
+  .product-card-main img {
+    width: 40%;
+  }
+
+  .product-card-info button {
+    margin: auto;
+    margin-top: 10px;
     transition: .2s;
   }
 
   /* about responsive */
 
-  .head-text{
+  .head-text {
     padding-top: 4ch;
     transition: .2s;
   }
 
-  .left-box h3{
+  .left-box h3 {
     font-size: 1.5rem;
     transition: .2s;
   }
 
-  .left-box span{
+  .left-box span {
     font-size: 2rem;
     transition: .2s;
   }
 
-  .right-box h3{
+  .left-box span:hover {
+    font-size: 2.25rem;
+  }
+
+  .right-box h3 {
     font-size: 1.5rem;
     transition: .2s;
   }
 
-  .right-box span{
+  .right-box span {
     font-size: 2rem;
     transition: .2s;
   }
 
-  .image-text{
-    
+  .right-box span:hover {
+    font-size: 2.25rem;
   }
 
+  .image-text h4 {
+    font-size: 1rem;
+  }
+
+  .image-text button {
+    font-size: 70%;
+  }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 523px) {
+
+
+  main {
+    margin-top: 20px;
+  }
+
+  /* nav responsive */
+
   .nav-section {
-    height: 5vh;
+    height: 8vh;
     transition: 0.2s;
   }
 
   .navbar {
-    font-size: 1rem;
+    font-size: 70%;
+    padding-left: 4px;
   }
 
   .navbar a {
-    padding: 5px 0;
     margin: 0 20px;
+    transition: .2s;
   }
 
-
   .login-btn {
-    margin-right: 25px;
-    margin-left: 10px;
-    padding: 0.4em;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
-    font-size: 1rem;
+    padding: 0.6em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    font-size: 80%;
     transition: all 0.2s ease;
+  }
+
+  /* home section responsive */
+
+  #itemtrailer {
+    width: 100%;
+  }
+
+  .home-text {
+    font-size: 100%;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    max-width: 150ch;
+    margin-left: 0;
+    padding: auto;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    transition: 0.2s;
+  }
+
+  .home-text span {
+    font-size: 1rem;
+    color: #ffffff;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .home-top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.2s;
+  }
+
+  .home-mid-text {
+    font-size: 100%;
+    margin-top: auto;
+    transition: 0.2s;
+  }
+
+  .home-mid-under {
+    font-size: 1.5rem;
+    transition: 0.2s;
+  }
+
+  .home-phone-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    transition: 0.2s;
+  }
+
+  #home-phone-img {
+    width: 80%;
+    transition: 0.2s;
+  }
+
+  .home-phone-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    font-size: 100%;
+    transition: 0.2s;
+  }
+
+  .home-phone-info li {
+    list-style-type: none;
+    padding: 7.5px;
+    transition: 0.2s;
+  }
+
+  .learn-more {
+    font-size: 80%;
+  }
+
+  /* products responsive */
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    transition: .2s;
+  }
+
+  .product-card {
+    width: 70%;
+    height: 100%;
+    transition: .2s;
+  }
+
+  .product-card-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-card-main img {
+    width: 60%;
+  }
+
+  .product-card-info button {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: .2s;
+  }
+
+  /* about responsive */
+
+  .head-text {
+    padding-top: 4ch;
+    transition: .2s;
+  }
+
+  .left-box h3 {
+    font-size: 1rem;
+    transition: .2s;
+  }
+
+  .left-box span {
+    font-size: 1.2rem;
+    transition: .2s;
+  }
+
+  .right-box h3 {
+    font-size: 1rem;
+    transition: .2s;
+  }
+
+  .right-box span {
+    font-size: 1.2rem;
+    transition: .2s;
+  }
+
+  .image-content {
+    background-position: left;
+    transition: .2s;
+  }
+
+  .image-text h4 {
+    font-size: 1rem;
+    width: 50vw;
+    margin-bottom: 10px;
+  }
+
+  .image-text button {
+    font-size: 70%;
   }
 }
