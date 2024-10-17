@@ -691,14 +691,14 @@ footer {
   }
 
   /* login responsive */
-  
+
   .login-input {
     height: 50px;
     width: 50vw;
     padding: 10px;
     transition: all 0.5s ease;
   }
-  
+
   .login-submit {
     width: 100%;
     padding: 10px;
@@ -889,18 +889,18 @@ footer {
   .image-text button {
     font-size: 70%;
   }
-  
+
   .login-text {
     font-size: 0.8rem;
     transition: all;
   }
-  
+
   .login-input {
     height: 7vh;
     width: 50vw;
     transition: all 0.5s ease;
   }
-  
+
   .login-submit {
     width: 100%;
     height: 12%;
@@ -908,5 +908,5 @@ footer {
     font-size: 1rem;
     transition: all 0.1s ease;
   }
-  
+
 }
