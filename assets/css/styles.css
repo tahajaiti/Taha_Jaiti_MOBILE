@@ -67,12 +67,11 @@ a:active {
 
 .navbar {
   display: flex;
-  padding-left: 30px;
+  padding-left: 2rem;
 }
 
 .navbar a {
-  padding: 5px 0;
-  margin: 0 50px;
+  margin: 0 40px 0 40px;
 }
 
 .logo {
